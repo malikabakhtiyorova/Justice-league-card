@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: #aaa;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-image: url("../img/bg.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4169e1;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.card img {
+  width: 250px;
+  height: 360px;
+  border-radius: 2px;
+  display: block;
+  box-shadow: -5px 10px 15px 0px rgba(0, 0, 0, 0.4);
+  margin-top: -40px;
+  margin-left: 30px;
+}
+
+.wrapper {
+  background-color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 520px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: translateX(-50%) translateY(10%);
+  border-radius: 4px;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.card img:hover + .wrapper {
+  transform: scale(1);
+}
+
+.wrapper-inner {
+  margin-top: 330px;
+  text-align: center;
+  height: 100%;
+}
+
+.wrapper-inner h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.wrapper-content {
+  margin-top: 0;
+  color: rgb(128, 125, 125);
+  font-weight: 600;
+}
+
+.price {
+  margin-top: 30px;
+}
+
+.price p {
+  margin: 0;
+}
+
+.price p:nth-child(1) {
+  font-size: 20px;
+  color: green;
+}
+
+.price p:nth-child(2) {
+  color: #aaa;
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 9px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  background-color: rgb(65, 65, 65);
+  font-weight: 600;
+  text-transform: uppercase;
+}
