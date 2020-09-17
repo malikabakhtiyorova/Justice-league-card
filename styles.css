@@ -79,7 +79,7 @@ img {
   transition: transform 0.5s ease;
 }
 
-.card img:hover + .wrapper {
+.card:hover .wrapper {
   transform: scale(1);
 }
 
