@@ -132,3 +132,16 @@ img {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.card:hover .wrapper {
+  z-index: 100;
+}
+
+.card:hover img {
+  z-index: 150;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
